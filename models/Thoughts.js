@@ -1,4 +1,6 @@
 const { Schema, model, Types } = require('mongoose');
+
+// This is the timestamp format from the Module 18 Pizza Hunt activity 
 const dateFormat = require('../utils/dateFormat');
 
 const ReactionSchema = new Schema(

@@ -51,10 +51,11 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
   TBD
   
   # Acknowledgements
-  Rob Atalla
-  Nathan Szurek (Tutor)
-  Calvin Freese (Teaching Assistant)
-  Derimar Gray (Classmate)
+ * Rob Atalla
+ * Nathan Szurek (Tutor)
+ * Calvin Freese (Teaching Assistant)
+ * Derimar Gray (Classmate)
+ * Pizza Hunt - KU Coding Bootcamp, Module 2 Activity © 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
     
   ## License
   ![badge](https://img.shields.io/badge/license-MIT-important)

@@ -1,3 +1,5 @@
+// This is the timestamp format from the Module 18 Pizza Hunt activity 
+
 const addDateSuffix = date => {
   let dateStr = date.toString();
 
