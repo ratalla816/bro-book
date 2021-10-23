@@ -52,8 +52,9 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
   
   # Acknowledgements
   Rob Atalla
-
   Nathan Szurek (Tutor)
+  Calvin Freese (Teaching Assistant)
+  Derimar Gray (Classmate)
     
   ## License
   ![badge](https://img.shields.io/badge/license-MIT-important)
