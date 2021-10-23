@@ -42,7 +42,7 @@ const userController = {
       .select("-__v")
       .then((dbUserData) => {
         if (!dbUserData) {
-          res.status(404).json({ message: "No user found with this id!" });
+          res.status(404).json({ message: "They aren't your bro, dude. They're nobody's bro!" });
           return;
         }
         res.json(dbUserData);
@@ -66,7 +66,7 @@ const userController = {
     })
       .then((dbUserData) => {
         if (!dbUserData) {
-          res.status(404).json({ message: "No dudes found, bro!" });
+          res.status(404).json({ message: "Bieber!!!" });
           return;
         }
         res.json(dbUserData);
@@ -81,14 +81,14 @@ const userController = {
         if (!dbUserData) {
           return res
             .status(404)
-            .json({ message: "No dudes found, bro!" });
+            .json({ message: "BOGUS!" });
         }
 
         // get user id and delete their associate thoughts
         return Thought.deleteMany({ _id: { $in: dbUserData.thoughts } });
       })
       .then(() => {
-        res.json({ message: "User and associated thoughts deleted!" });
+        res.json({ message: "That bro-it-all and their ideas are in brohibition!" });
       })
       .catch((err) => {
         console.log(err);
@@ -106,7 +106,7 @@ const userController = {
         if (!dbUserData) {
           return res
             .status(404)
-            .json({ message: "No dudes found, bro!" });
+            .json({ message: "NO WAY!" });
         }
         res.json(dbUserData);
       })
@@ -123,7 +123,7 @@ const userController = {
         if (!dbUserData) {
           return res
             .status(404)
-            .json({ message: "No dudes found, bro!" });
+            .json({ message: "That's not your bro, dude!" });
         }
         res.json(dbUserData);
       })
