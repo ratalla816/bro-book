@@ -1,20 +1,20 @@
 # Social Network API
 
-  ![badge](https://img.shields.io/github/languages/top/ratalla816/social-network-api)
+  ![badge](https://img.shields.io/github/languages/top/ratalla816/bro-book)
   <br> 
-  ![badge](https://img.shields.io/github/languages/count/ratalla816/social-network-api)
+  ![badge](https://img.shields.io/github/languages/count/ratalla816/bro-book)
   <br>
-  ![badge](https://img.shields.io/github/issues/ratalla816/social-network-api)
+  ![badge](https://img.shields.io/github/issues/ratalla816/bro-book)
   <br>
-  ![badge](https://img.shields.io/github/issues-closed/ratalla816/social-network-api)
+  ![badge](https://img.shields.io/github/issues-closed/ratalla816/bro-book)
   <br>
-  ![badge](https://img.shields.io/github/last-commit/ratalla816/social-network-api)
+  ![badge](https://img.shields.io/github/last-commit/ratalla816/bro-book)
   <br>
   ![badge](https://img.shields.io/badge/license-MIT-important)
   
   ## Description
   
-   AS A social media startup
+AS A social media startup
 I WANT an API for my social network that uses a NoSQL database
 SO THAT my website can handle large amounts of unstructured data
 GIVEN a social network API
