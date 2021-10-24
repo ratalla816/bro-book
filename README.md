@@ -39,7 +39,7 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 
  
   ## Screenshot
-   ![Screenshot](assets/images/bro-book.gif)
+   ![Screenshot](assets/images/Bro-Book.gif)
 
   ## Walkthrough
   The Walkthrough video is in four parts:
