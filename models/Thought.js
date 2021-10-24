@@ -24,43 +24,46 @@ const ReactionSchema = new Schema(
     },
   },
   {
-    toJSON: {
-      getters: true,
-    },
+    toJSON: { getters: true },
     id: false,
   }
 );
 
 const ThoughtSchema = new Schema(
   {
-    thoughtText: {
+    thoughtText:
+    {
       type: String,
       required: true,
       minlength: 1,
       maxlength: 280,
     },
-    createdAt: {
+
+    createdAt: 
+    {
       type: Date,
       default: Date.now(),
       get: (createdAtVal) =>
-        moment(createdAtVal).format("MMM Do, YYYY [at] hh:mma"),
+       moment(createdAtVal).format("MMM Do, YYYY [at] hh:mma"),
     },
-    username: {
+
+    username: 
+    {
       type: String,
       required: true,
     },
+    
     reactions: [ReactionSchema],
   },
-  {
-    toJSON: {
-      virtuals: true,
-      getters: true,
-    },
-    id: false,
-  }
+
+    {
+      toJSON: { virtuals: true, getters: true },
+      id: false,
+    }
 );
 
-ThoughtSchema.virtual("reactionCount").get(function () {
+ThoughtSchema.virtual("reactionCount")
+.get(function () {
   return this.reactions.length;
 });
 
