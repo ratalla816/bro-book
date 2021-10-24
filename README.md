@@ -45,7 +45,7 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
   TBD
 
   ## Screenshot
-   ![Screenshot](assets/images/screenshot.png)
+   ![Screenshot](assets/images/bro-book.gif)
 
   ## Features
   TBD
