@@ -1,4 +1,4 @@
-# Social Network API
+# Social Network API AKA BRO-BOOK
 
   ![badge](https://img.shields.io/github/languages/top/ratalla816/bro-book)
   <br> 
@@ -20,17 +20,16 @@ SO THAT my website can handle large amounts of unstructured data
 GIVEN a social network API
 WHEN I enter the command to invoke the application
 THEN my server is started and the Mongoose models are synced to the MongoDB database
-WHEN I open API GET routes in Insomnia Core for users and thoughts
+WHEN I open API GET routes in Insomnia Core for dudes and thoughts
 THEN the data for each of these routes is displayed in a formatted JSON
 WHEN I test API POST, PUT, and DELETE routes in Insomnia Core
-THEN I am able to successfully create, update, and delete users and thoughts in my database
+THEN I am able to successfully create, update, and delete dudes and thoughts in my database
 WHEN I test API POST and DELETE routes in Insomnia Core
-THEN I am able to successfully create and delete reactions to thoughts and add and remove friends to a user’s friend list
+THEN I am able to successfully create and delete reactions to thoughts and add and remove bros to a dude’s bro list
  
   ## Table of Contents
   - [Description](#description)
-  - [Documentation](#documentation)
-  - [Usage](#usage)
+  - [Walkthrough](#walkthrough)
   - [Screenshot](#screenshot)
   - [Features](#features)
   - [Acknowledgements](#acknowledgements)
@@ -38,17 +37,17 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
   - [Testing](#testing)
   - [Contact](#contact)
 
-  ## Documentation
-  TBD
  
-  ## Usage
-  TBD
-
   ## Screenshot
    ![Screenshot](assets/images/bro-book.gif)
 
-  ## Features
-  TBD
+  ## Walkthrough
+  The Walkthrough video is in four parts:
+  * Dudes <https://watch.screencastify.com/v/J4kDDcblvTSsi1S0JTDO>
+  * Bros <https://watch.screencastify.com/v/IlU1Exy312b3FFKptBeL>
+  * Thoughts <https://watch.screencastify.com/v/tlQpztDPT4VyvdNyattv>
+  * Reactions <https://watch.screencastify.com/v/NpHefFGkyE64rkxNnbwu>
+
   
   # Acknowledgements
  * Rob Atalla
