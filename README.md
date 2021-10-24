@@ -1,4 +1,4 @@
-# Social Network API AKA BRO-BOOK
+# Social Network API aka BRO-BOOK
 
   ![badge](https://img.shields.io/github/languages/top/ratalla816/bro-book)
   <br> 
