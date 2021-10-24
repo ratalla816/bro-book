@@ -26,3 +26,16 @@ router.route("/:userId/bros/:broId")
 .delete(removeBro);
 
 module.exports = router;
+
+// rob id: 6174b7c965ebf1aa8a3feddf
+
+// tomtom1 6174c32c65ebf1aa8a3fede3
+
+// {
+//   "_id": "6174c32c65ebf1aa8a3fede3",
+//   "username": "tomtom1",
+//   "email": "tom@tom.com",
+//   "thoughts": [],
+//   "friends": [],
+//   "friendCount": 0
+// },
