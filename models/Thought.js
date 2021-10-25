@@ -30,7 +30,7 @@ const ReactionSchema = new Schema(
         moment(createdAtVal).format("MMM Do, YYYY [at] hh:mma"),
     },
   },
-
+  
   {
     toJSON: { getters: true },
     id: false,
@@ -52,7 +52,6 @@ const ThoughtSchema = new Schema(
       type: Date,
       default: Date.now(),
       get: (createdAtVal) =>
-
         moment(createdAtVal).format("MMM Do, YYYY [at] hh:mma"),
     },
 
@@ -73,7 +72,6 @@ const ThoughtSchema = new Schema(
 
 ThoughtSchema.virtual("reactionCount")
   .get(function () {
-
     return this.reactions.length;
   });
 
