@@ -3,26 +3,34 @@ const moment = require("moment");
 
 const ReactionSchema = new Schema(
   {
-    reactionId: {
+    reactionId:
+    {
       type: Schema.Types.ObjectId,
       default: () => new Types.ObjectId(),
     },
-    reactionBody: {
+
+    reactionBody:
+    {
       type: String,
       required: true,
       maxLength: 280,
     },
-    username: {
+
+    username:
+    {
       type: String,
       required: true,
     },
-    createdAt: {
+
+    createdAt:
+    {
       type: Date,
       default: Date.now,
       get: (createdAtVal) =>
         moment(createdAtVal).format("MMM Do, YYYY [at] hh:mma"),
     },
   },
+  
   {
     toJSON: { getters: true },
     id: false,
@@ -39,33 +47,33 @@ const ThoughtSchema = new Schema(
       maxlength: 280,
     },
 
-    createdAt: 
+    createdAt:
     {
       type: Date,
       default: Date.now(),
       get: (createdAtVal) =>
-       moment(createdAtVal).format("MMM Do, YYYY [at] hh:mma"),
+        moment(createdAtVal).format("MMM Do, YYYY [at] hh:mma"),
     },
 
-    username: 
+    username:
     {
       type: String,
       required: true,
     },
-    
+
     reactions: [ReactionSchema],
   },
 
-    {
-      toJSON: { virtuals: true, getters: true },
-      id: false,
-    }
+  {
+    toJSON: { virtuals: true, getters: true },
+    id: false,
+  }
 );
 
 ThoughtSchema.virtual("reactionCount")
-.get(function () {
-  return this.reactions.length;
-});
+  .get(function () {
+    return this.reactions.length;
+  });
 
 const Thought = model("Thought", ThoughtSchema);
 
