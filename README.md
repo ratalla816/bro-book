@@ -31,7 +31,6 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
   - [Description](#description)
   - [Walkthrough](#walkthrough)
   - [Screenshot](#screenshot)
-  - [Features](#features)
   - [Acknowledgements](#acknowledgements)
   - [License](#license)
   - [Testing](#testing)
