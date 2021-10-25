@@ -1,16 +1,15 @@
 const { Thought, User } = require("../models");
 
-// #1 POST a thought
-// #2 GET all thoughts
-// #3 GET a thought by it's id
-// #4 DELETE A thought by it's ID 
-// #5 'PUT' update a thought by it's ID
+// #1 GET all thoughts
+// #2 GET a thought by it's id
+// #3 POST a thought
+// #4 'PUT' update a thought by it's ID
+// #5 DELETE A thought by it's ID 
 // #6 POST a reaction to a thought
 // #7 DELETE a reaction by it's ID
-// #8 'PUT' update a reaction by it's ID
 
 const thoughtController = {
-  // #2 GET all thoughts
+  // #1 GET all thoughts
   getAllThoughts(req, res) {
     Thought.find({})
       .select("-__v")
@@ -22,24 +21,24 @@ const thoughtController = {
       });
   },
 
-  // #3 GET a thought by it's id
+  // #2 GET a thought by it's id
   getThoughtById(req, res) {
     Thought.findOne({ _id: req.params.thoughtId })
       .then((dbThoughtData) => {
         if (!dbThoughtData) {
           return res
-            .status(404)
-            .json({ message: "If you're here, and I'm here, doesn't it make it OUR time?" });
+            .status(404).json({ message: "If you're here, and I'm here, doesn't it make it OUR time?" });
         }
         res.json(dbThoughtData);
       })
+
       .catch((err) => {
         console.log(err);
         res.status(400).json(err);
       });
   },
 
-  // #1 POST a thought
+  // #3 POST a thought
   addThought({ params, body }, res) {
     console.log(body);
     Thought.create(body)
@@ -60,7 +59,7 @@ const thoughtController = {
       .catch((err) => res.json(err));
   },
 
-  // #5 'PUT' update a thought by it's ID
+  // #4 'PUT' update a thought by it's ID
   updateThought(req, res) {
     Thought.findOneAndUpdate(
       { _id: req.params.thoughtId },
@@ -70,8 +69,7 @@ const thoughtController = {
       .then((dbThoughtData) => {
         if (!dbThoughtData) {
           return res
-            .status(404)
-            .json({ message: "GNARLY!" });
+            .status(404).json({ message: "GNARLY!" });
         }
         res.json(dbThoughtData);
       })
@@ -81,7 +79,7 @@ const thoughtController = {
       });
   },
 
- // #4 DELETE A thought by it's ID 
+ // #5 DELETE A thought by it's ID 
   removeThought({ params }, res) {
     Thought.findOneAndDelete({ _id: params.thoughtId })
       .then((deletedThought) => {
@@ -114,8 +112,7 @@ const thoughtController = {
       .then((dbThoughtData) => {
         if (!dbThoughtData) {
           return res
-            .status(404)
-            .json({ message: "Bieber!!!" });
+            .status(404).json({ message: "Bieber!!!" });
         }
         res.json(dbThoughtData);
       })
@@ -135,8 +132,7 @@ const thoughtController = {
       .then((dbThoughtData) => {
         if (!dbThoughtData) {
           return res
-            .status(404)
-            .json({ message: "If you're here, and I'm here, doesn't it make it OUR time?" });
+            .status(404).json({ message: "If you're here, and I'm here, doesn't it make it OUR time?" });
         }
         res.json(dbThoughtData);
       })
