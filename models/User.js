@@ -15,7 +15,8 @@ const UserSchema = new Schema(
       type: String,
       required: "Dude, we need your Email address",
       unique: true,
-      match: [/.+@.+\..+/, "Dude.. bro.. just enter your email address"],
+      match: [/.+@.+\..+/, 
+      "Dude.. bro.. just enter your email address"],
     },
 
     thoughts: [ { type: Schema.Types.ObjectId, ref: "Thought"} ],
@@ -24,6 +25,7 @@ const UserSchema = new Schema(
       { type: Schema.Types.ObjectId,
         ref: "User",
       },
+      
     ],
   },
 
